@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About MBA">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Anjali Tyagi">
+    <title>Home</title>
+
+    <link href="./css/main.css" rel="stylesheet"/>
+    <link href="./owlcarousel/assets/owl.carousel.min.css" rel='stylesheet'/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./owlcarousel/owl.carousel.min.js"></script>
+</head>
+<body>
+    <!--
+    Didn't I mentioned that default web page name must be index.html? why it is finflo?yes u mentioned that
+    -->
+    <div class="main-wrapper"><!--this is main parent div and inside the chil elements has position absolute, why this parent's position is not relative?
+        use proper naming.
+
+        follow the commands i am using inside the git, ok?okh
+
+        git status //to check what files i have made changes
+        git add . OR git add --all //both command add all the changed files in queue, '.' means less files, if you many files in different folder then use --all, by default use 'git add .'
+        git commit -m "You message", commit defines that you acknowledge the changes ready to add m for message and wirte appropiate message you have done within ""
+        finally - git push or git push origin main
+        -->
+
+        <header>
+            <div class="container">
+                <nav class="navbar">
+                    <a href="./index.html" class="brand"><h3> FinFLO </h3></a>
+                    <button type="button" class="nav-toggle" style="display: none;" id="navToggle"><i class="fa fa-bars"></i></button>
+                    <ul class="nav-menu" id="menuToggle">
+
+                        <li class="nav-menu-link ">
+                            <a href="./index.html">Learn</a>
+                        </li>
+                        
+                        <li class="nav-menu-link">
+                            <a href="./use.html">Use</a>
+                        </li>
+                        <li class="nav-menu-link">
+                            <a href="./build.html">Build</a>
+                        </li>
+                    
+                        <li class="nav-menu-link">
+                            <a href="./participate.html">Participate</a>
+                        </li>
+                        <li class="nav-menu-link">
+                            <a href="./research.html">Research</a>
+                        </li>
+                    </ul>
+                    <a  target="_blank" class="button"><b> ADD MONEY </b></a>
+                </nav>
+            </div>
+        </header>
+
+        <div class="item">
+            <!--what is this value? where did you learn z-index value is string
+            float is either right or left, not center-bottom,
+            I am still seeing the button, which i said to fix it long time.
+            Please follow the rules to use the tags, ul/ol has li's inside
+            -->
+            <img src="./images/monkey.png" style="width: 300px;
+            position: absolute;
+            z-index: 9;
+            left: 35%;
+            bottom: 0;
+            transform: translate(-5%, 15%);" />
+        </div> 
+
+        <p class="p1"> FUTURE OF </p>
+        <p class="p2"> PRIVATEQUITY</p> 
+        <!--this h1 tag has no closing, when using heading tags h1, h2, h3, h4, h5, do not use it under text tags like p, span-->
+        <h1 style="position: absolute; right: 280px;overflow-y: hidden;height: 80px;  bottom: 60px; color: whitesmoke; font-size: 115px; font-weight: 800;">2024 </h1>
+        <h6 style="position: absolute; right: 280px; bottom: 30px; color: whitesmoke;font-size: 13px; font-weight: 800;">STEP INTO THE FUTURE OF FINANACE </h6>
+        <!--why this strong tag closing inside the h6?, use font-weight instead of strong-->
+        <div class="sidebar">
+
+            <a  href="#personal">Personal &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<i class="fa fa-arrow-right fa-fw margin-right large text-teal"></i> </a>
+            <a href="#team">Team &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<i class="fa fa-arrow-right fa-fw margin-right large text-teal"></i> </a>
+            <a href="#business">Business &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;<i class="fa fa-arrow-right fa-fw margin-right large text-teal"></i> </a>
+        </div>
+
+    </div>
+
+    <div class="container2">
+        <p class="p3"> VALUE </p>
+    </div>
+  
+<!--where is the end tag for body and html?-->
+</body>
+</html>
